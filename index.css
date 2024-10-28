@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.right {
+  width: fit-content;
+  padding: 30px;
+}
+
+.faint-text {
+  color: black;
+  opacity: 0.5;
+}
+
+.perfume {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+img {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  height: 400px;
+  margin-bottom: -4px;
+  /* This particular property has no effect in this html, I want to look it up. */
+  /* object-fit: cover; */
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  /* margin auto is used to center an element horizontally within it's container. In this case, specifying a value before auto is used to add margin to the top and bottom of the element. */
+  margin: 10px auto;
+  background-color: rgb(61, 129, 104);
+  width: 100%;
+}
+
+.prices {
+  display: flex;
+  gap: 8px;
+}
+.sec-font {
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+}
+
+.old-price {
+  font-size: 0.8em;
+  display: flex;
+  color: gray;
+  align-self: center;
+}
+
+.new-price {
+  padding: 5px;
+  color: rgb(65, 129, 105);
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+p {
+  font-size: 14px;
+}
