@@ -42,8 +42,9 @@ body {
 img {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  height: 430px;
-  margin-bottom: -4px;
+  /* When I removed the left container and the styling associated with it from my html and let the image tag stand alone inside the container now holding just the img and right container, then I set the height of the image to 100%, and the width to auto, it fitted perfectly to the container holding the image and the right container now. So as it's fitted perfectly, I  didn't need to add the negative value to margin bottom, I removed it completely. */
+  height: 100%;
+  width: auto;
   /* This particular property has no effect in this html, I want to look it up. */
   /* object-fit: cover; */
 }
@@ -93,7 +94,13 @@ p {
   margin-top: 50px;
 }
 
-@media (max-width: 375px) {
+/* @media (min-width: 481px) and (max-width: 1200px) {
+  body {
+    background-color: rgb(13, 75, 83);
+  }
+} */
+
+@media (max-width: 428px) {
   body {
     background-color: #f2ebe3;
     height: 100vh;
@@ -122,13 +129,9 @@ p {
     height: 14rem;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-  }
-
-  .left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
+    /* I set the mobile image width to 100% and the height to auto. Because it's different from the desktop one as it's wider and shorter. */
+    width: 100%;
+    height: auto;
   }
 
   .right .right button {
