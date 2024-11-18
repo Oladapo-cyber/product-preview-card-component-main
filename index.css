@@ -92,6 +92,8 @@ p {
 
 .attribution {
   margin-top: 50px;
+  align-items: center;
+  text-align: center;
 }
 
 /* @media (min-width: 481px) and (max-width: 1200px) {
@@ -114,7 +116,7 @@ p {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: auto;
     justify-content: center;
     align-items: center;
   }
